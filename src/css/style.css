@@ -1,0 +1,208 @@
+/* Pisava, velikost in barva naslovov */
+body{ font-family: Roboto, Helvetica, Arial, sans-serif; }
+h1 { color: rgba(85,61,123,1.0) }
+h2 { color: rgba(85,61,123,0.85); font-size: 2em; font-weight: bold }
+h3 { color: rgba(85,61,123,0.80); font-size: 2em }
+p {font-size: 1.15em;}
+
+/* okvir <header>: Logotip in navigacija */
+.navbar {
+   margin-bottom: 0;
+   border-radius: 0;
+   background-color: #fff;
+   color: #222;
+   border: 0;
+   font-size: 1.2em;
+}
+
+/* Oblikovne lastnosti ikone menija */
+.navbar-inverse .navbar-toggle {
+   border-color: #aaa;
+   background-color: #aaa;
+   margin-top: 30px;
+}
+
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
+   border-color: #666;
+   background-color: #666;
+}
+
+/* Oblikovne lastnosti logotipa */
+.navbar-brand {
+   float: left;
+   min-height: 85px;
+   padding: 10px 0 0 25px;
+}
+
+/* Oblikovne lastnosti navigacije */
+.navbar-inverse .navbar-nav { margin-top: 40px; }
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+   color: #000;
+   background-color: #fff;
+}
+
+.navbar-inverse .navbar-nav li a {
+   color: #999;
+   padding: 3px 8px;
+}
+
+.navbar-inverse .navbar-nav li a:hover { color: #333; }
+
+@media (max-width: 767px) {
+   .navbar-inverse .navbar-nav {
+      margin-top: 5px;
+      padding-left: 25px;
+   }
+}
+
+/* Vrtiljak slik - Carousel */
+.item img { width: 100%; }
+
+/* Položaj napisa na slikah vrtiljaka */
+.carousel-caption {
+   top: 70%;
+   transform: translateY(-70%);
+}
+
+/* Oblika napisa na slikah vrtiljaka */
+.carousel-caption p {
+   font-size: 1.5em;
+   color: #bbb;	
+}
+
+/* Gumb na sliki vrtiljaka */
+.carousel-caption button { margin-top: 1.5em; }
+
+.carousel-caption .btn {
+   font-size: 1.2em;
+   color: #fff;
+   background-color: #553d7b;
+   padding: 12px 22px;
+   border: 2px solid #fff;
+}
+
+.carousel-caption .btn:hover {
+   color: #553d7b;
+   background-color: #fff;
+}
+
+/* Oblika napisov na slikah vrtiljaka pri različnih velikostih zaslona */
+@media (max-width: 1200px) {
+   .carousel-caption p {
+      font-size: 1.3em;
+   }
+   .carousel-caption button {
+      margin-top: 0em;	
+   }
+}
+
+@media (max-width: 940px) {
+   .carousel-caption button {
+      display: none;
+   }
+   .carousel-caption p {
+      font-size: 1.2em;
+   }
+}
+
+@media (max-width: 700px) {
+   .carousel-caption p {
+      font-size: 1.1em;
+      margin-top: -20px;
+   }
+}
+
+@media (max-width: 525px) {
+   .carousel-caption button {
+      display: none;
+   }
+   .carousel-caption p {
+      display: none;
+   }
+}
+
+/***** Slike 'Kaj uporabljamo'  **********/
+#domov h1 {margin-bottom: 15px }
+
+.container { margin: 3% auto; }
+
+.ikona { max-width: 180px; }
+
+.container h1 {
+   padding-bottom: 15px;
+   font-weight: bold;
+}
+
+.container h3 {	font-size: 1.5em; }
+
+@media (max-width: 990px) {
+   .ikona {
+      max-width: 150px;
+   }
+}
+
+@media (max-width: 770px) {
+   .ikona { max-width: 110px; }
+	
+   .container h1 { font-size: 2em;	}
+	
+   .container h3 {
+      font-size: 1.3em;
+      padding-bottom: 25px;
+      margin-top: 5px;
+   }
+}
+
+#besedilo { background-color: #ececec; }
+
+/* Okvir 'Mnenja naših uporabnikov' */
+.ime {
+    font-size: 1.05em;
+    font-style: italic;
+    color: #999;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: -7px;
+ }
+ 
+ .poved { padding-top: 15px; }
+ 
+ .fa-quote-left, .fa-quote-right { color: #aaa; }
+ 
+ @media (max-width: 770px) {
+    .mnenje { margin-top: 25px;	}
+ }
+
+
+ /* Noga spletne strani <footer> */
+footer {
+    background-color: #666;
+    min-height: 80px;
+    color: #ccc;
+    padding: 15px 0;
+}
+footer a { color: #eaeaea; }
+
+.nogaLevo{ text-align: right; }
+
+.nogaLevo .fa {	padding: 0px 5px; }
+
+.nogaDesno{
+    text-align: left;
+    padding-top: 8px;
+}
+ 
+@media (max-width: 770px) {
+.nogaLevo{
+    text-align: center;
+    padding: 15px 5px;
+}
+.nogaDesno{
+    text-align: center;
+    padding: 15px 0;
+}
+}
