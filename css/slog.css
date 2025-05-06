@@ -177,32 +177,117 @@ p {font-size: 1.15em;}
     .mnenje { margin-top: 25px;	}
  }
 
-
  /* Noga spletne strani <footer> */
 footer {
     background-color: #666;
     min-height: 80px;
     color: #ccc;
     padding: 15px 0;
-}
-footer a { color: #eaeaea; }
-
-.nogaLevo{ text-align: right; }
-
-.nogaLevo .fa {	padding: 0px 5px; }
-
-.nogaDesno{
+ }
+ footer a { color: #eaeaea; }
+ 
+ .nogaLevo{ text-align: right; }
+ 
+ .nogaLevo .fa {	padding: 0px 5px; }
+ 
+ .nogaDesno{
     text-align: left;
     padding-top: 8px;
-}
+ }
  
-@media (max-width: 770px) {
-.nogaLevo{
-    text-align: center;
-    padding: 15px 5px;
+ @media (max-width: 770px) {
+    .nogaLevo{
+       text-align: center;
+       padding: 15px 5px;
+    }
+    .nogaDesno{
+       text-align: center;
+       padding: 15px 0;
+    }
+ }
+
+ /* Bootstrap - Glavni naslov */
+.bs-glavaStrani {
+    background-color: #553d7b;
+    color:#cdbfe3;
+    padding: .5em 15px;
+ }
+ .bs-glavaStrani h1 {
+    font-size: 2.8em;
+    font-weight: 400;
+    color: #fff;
+ }
+ .bs-glavaStrani p {
+    font-size: 1.3em;
+    font-weight: 300;
+ }
+
+ /* Bootstrap - Okvir 'Kaj je Bootstrap?' */
+
+/* oblikovanje gumbov */
+#bootstr .btn {
+    background-color: #fff;
+    color: #553d7b;
+    border: 1px solid #553d7b;
+    padding: 5px 50px;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ #bootstr .btn:hover {
+    color: #fff;
+    background-color: #553d7b;
+ }
+ /* Odstavek 'Trenutna verzija ... */
+ #bootstr .verzija {
+    font-size: 1em;
+    color: #999;
+    font-style: italic;
+ }
+
+ /* okvir 3 stolpcev */
+#bootstr .bs-okvir {
+    background-color: #f5f5f5; 
+    margin: -13px;  
+    padding: 15px 15px 0;
+ }
+ #bootstr .bs-okvir .fa { color: #4da6ff; padding-left: 10px }
+ 
+ /* gumbi v okvirju s 3 stolpci */
+ #bootstr .bs-gumb{
+    background-color: #fff;
+    color: #4da6ff;
+    border: 1px solid #4da6ff;
+    padding: 8px 15px;
+    font-size: 1em;
+ }
+ #bootstr .bs-gumb:hover {
+    background-color: #4da6ff;
+    color: #fff;
+    border: 1px solid #4da6ff;
+ }
+ 
+ /* okvir kode z drsnikom */
+ #bootstr .over { 
+    display: inline-flex;
+    overflow-x: scroll; 
+ }
+ 
+ /* odmik okvirjev v mobilni verziji */
+ @media (max-width: 767px) {
+    #bootstr .bs-okvir {
+       margin: 5px;  
+    }
+ }
+
+ /* Stranski meni */
+#bs article h1 { padding-top: 1em; }
+
+#bs #uvod, #bs #pregled, #bs #tipografija, #bs #opozorila {
+   padding-top: 0;
 }
-.nogaDesno{
-    text-align: center;
-    padding: 15px 0;
-}
+#bs nav h3 { border-bottom: 1px solid #efefef;}
+#bs nav li {
+   padding: 3px 5px;
+   font-size: 1.2em;
 }
